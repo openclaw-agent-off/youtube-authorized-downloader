@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "youtube-authorized-downloader"
+version = "0.1.0"
+description = "A restrictive local CLI for archiving one authorized YouTube video."
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+[project.scripts]
+youtube-authorized-download = "ytauthdownloader.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ytauthdownloader*"]
